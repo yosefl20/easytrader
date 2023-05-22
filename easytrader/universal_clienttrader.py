@@ -41,7 +41,7 @@ class UniversalClientTrader(clienttrader.BaseLoginClientTrader):
                 except:
                     self.wait(1)
 
-            self.wait(1)
+            self.wait(5)
             self._app.window(handle=login_window).Edit1.set_focus()
             self._app.window(handle=login_window).Edit1.type_keys(user)
             self.wait(1)
